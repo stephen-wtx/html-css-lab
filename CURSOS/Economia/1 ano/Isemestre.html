@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economia & Gestão</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../../STYLE/css/scorcese.css">
+    <link rel="stylesheet" href="../../../STYLE/css/style.css">
+    <link rel="stylesheet" href="../../../STYLE/css/semestre.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Nexus</a></div>
+            <ul class="links">
+                <li><a href="../../../INICIO/Inicio.html">Inicio</a></li>
+                <li><a href="../../cursos.html">Cursos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="../../../CONTACT/contact.html">Contacto</a></li>
+            </ul>
+
+                <a href="../../../INICIO/Inicio.html" class="action_btn">Sair</a>
+
+            <div class="toggle_btn">
+                <!-- https://fontawesome.com/icons/bars?f=classic&s=solid -->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="../../../INICIO/Inicio.html">Inicio</a></li>
+            <li><a href="../../cursos.html">Cursos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="../../../CONTACT/contact.html">Contacto</a></li>
+            <li><a href="../../../INICIO/Inicio.html" class="action_btn">Sair</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+        }
+    </script>
+
+    <main>
+        <h2>I Semestre - Cadeiras</h2>
+        <!-- container pra semestre -->
+        <div class="semestre">
+                <!-- 1a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteudo/Cadeiras/I SEMESTRE/Metodologia de Investigacao Cientifica/MIC.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/economia/I ANO/I semestre/metodologia-pesquisa.png" alt="Metodologia de Investigação Científica"></a>
+
+                    <div class="descricao">
+                        <a href="./Conteudo/Cadeiras/I SEMESTRE/Metodologia de Investigacao Cientifica/MIC.html">
+                            <h3>Metodologia de Investigação Científica</h3>
+                        </a>
+                    
+                    </div>
+                </div>
+
+
+                 <!-- 2a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteudo/Cadeiras/I SEMESTRE/Etica Geral/EG.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/economia/I ANO/I semestre/etica.png" alt="Ética Geral"></a>
+                    
+                    <div class="descricao">
+                        <a href="./Conteudo/Cadeiras/I SEMESTRE/Etica Geral/EG.html">
+                            <h3>Ética Geral</h3>
+                        </a>
+              
+                    </div>
+                </div>
+
+                 <!-- 3a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteudo/Cadeiras/I SEMESTRE/Nocoes de Informatica/NI.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/economia/I ANO/I semestre/nocoes-informatica.png" alt="Noções de Informática"></a>
+                    
+                    <div class="descricao">
+                        <a href="./Conteudo/Cadeiras/I SEMESTRE/Nocoes de Informatica/NI.html">
+                            <h3>Noções de Informática</h3>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- 4a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteudo/Cadeiras/I SEMESTRE/Microeconomia I/M I.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/economia/I ANO/I semestre/microeconomia.png" alt="Microeconomia I"> </a>
+                        <div class="descricao">
+                            <a href="./Conteudo/Cadeiras/I SEMESTRE/Microeconomia I/M I.html">
+                                <h3>Microeconomia I</h3>
+                            </a>
+                    </div>
+                </div>
+
+
+                 <!-- 5a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteudo/Cadeiras/I SEMESTRE/Matematica I/M I.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/economia/I ANO/I semestre/matematica.png" alt="Matemática I"></a>
+                 
+                    <div class="descricao">
+                        <a href="./Conteudo/Cadeiras/I SEMESTRE/Matematica I/M I.html">
+                            <h3>Matemática I</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cadeiras">
+                    <a href="./Conteudo/Cadeiras/I SEMESTRE/Habilidade de Vida Saude Sexual Reprodutiva e HIV&SIDA/HVSR.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/economia/I ANO/I semestre/hablidades-vida.png" alt="Habilidades de Vida, Saúde Sexual Reprodutiva e HIV & SIDA"></a>
+                 
+                    <div class="descricao">
+                        <a href="./Conteudo/Cadeiras/I SEMESTRE/Habilidade de Vida Saude Sexual Reprodutiva e HIV&SIDA/HVSR.html">
+                            <h3>Habilidades de Vida, Saúde Sexual Reprodutiva e HIV & SIDA</h3>
+                        </a>
+                    </div>
+                </div>
+
+        
+
+                <div class="arrow">
+                    <!-- ceta -->
+                    <a href="IIsemestre.html" id="right_arrow"><img src="../../../IMGS & ICONS/ICONS/cursos/right.svg" alt="" class="right_arrow" id="right_arrow"></a>
+                </div>
+
+            </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>©2024. Nexus. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>

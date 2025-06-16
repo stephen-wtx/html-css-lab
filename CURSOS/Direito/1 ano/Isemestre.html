@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direito</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../../STYLE/css/scorcese.css">
+    <link rel="stylesheet" href="../../../STYLE/css/style.css">
+    <link rel="stylesheet" href="../../../STYLE/css/semestre.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Nexus</a></div>
+            <ul class="links">
+                <li><a href="../../../INICIO/Inicio.html">Inicio</a></li>
+                <li><a href="../../cursos.html">Cursos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="../../../CONTACT/contact.html">Contacto</a></li>
+            </ul>
+
+                <a href="../../../INICIO/Inicio.html" class="action_btn">Sair</a>
+
+            <div class="toggle_btn">
+                <!-- https://fontawesome.com/icons/bars?f=classic&s=solid -->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="../../../INICIO/Inicio.html">Inicio</a></li>
+            <li><a href="../../cursos.html">Cursos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="../../../CONTACT/contact.html">Contacto</a></li>
+            <li><a href="../../../INICIO/Inicio.html" class="action_btn">Sair</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+        }
+    </script>
+
+    <main>
+        <h2>I Semestre - Cadeiras</h2>
+        <!-- container pra semestre -->
+        <div class="semestre">
+                <!-- 1a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Cadeiras/I SEMESTRE/Ciencia Politica/Ciencia Politica.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/direito/I ANO/I semestre/ciencia-politica.png" alt="Ciência política"></a>
+
+                    <div class="descricao">
+                        <a href="./Cadeiras/I SEMESTRE/Ciencia Politica/Ciencia Politica.html">
+                            <h3>Ciência Política</h3>
+                        </a>
+                    
+                    </div>
+                </div>
+
+
+                 <!-- 2a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Cadeiras/I SEMESTRE/Economia Publica/Economia Publica.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/direito/I ANO/I semestre/economia-publica.png" alt="Economia pública"></a>
+                    
+                    <div class="descricao">
+                        <a href="./Cadeiras/I SEMESTRE/Economia Publica/Economia Publica.html">
+                            <h3>Economia Pública</h3>
+                        </a>
+              
+                    </div>
+                </div>
+
+                 <!-- 3a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Cadeiras/I SEMESTRE/Filosofia Juridica/Filosofia Juridica.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/direito/I ANO/I semestre/filosofia-juridica.png" alt="Filosofia jurídica"></a>
+                    
+                    <div class="descricao">
+                        <a href="./Cadeiras/I SEMESTRE/Filosofia Juridica/Filosofia Juridica.html">
+                            <h3>Filosofia Jurídica</h3>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- 4a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Cadeiras/I SEMESTRE/Fundamentos de Teologia Catolica/FTC.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/direito/I ANO/I semestre/teologia.png" alt="Fundamentos de teologia católica"> </a>
+                        <div class="descricao">
+                            <a href="./Cadeiras/I SEMESTRE/Fundamentos de Teologia Catolica/FTC.html">
+                                <h3>Fundamentos de Teologia Católica</h3>
+                            </a>
+                    </div>
+                </div>
+
+
+                 <!-- 5a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Cadeiras/I SEMESTRE/Habilidades de Vida/Habilidades de vida.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/direito/I ANO/I semestre/hablidades-vida.png" alt="Habilidades de Vida"></a>
+                 
+                    <div class="descricao">
+                        <a href="./Cadeiras/I SEMESTRE/Habilidades de Vida/Habilidades de vida.html">
+                            <h3>Habilidades de Vida</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 6a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Cadeiras/I SEMESTRE/Historia do Direito/Historia do Direito.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/direito/I ANO/I semestre/historia-direito.png" alt="História do Direito"></a>
+                 
+                    <div class="descricao">
+                        <a href="./Cadeiras/I SEMESTRE/Historia do Direito/Historia do Direito.html">
+                            <h3>História do Direito</h3>
+                        </a>
+                    </div>
+                </div>
+
+                
+                <!-- 7a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Cadeiras/I SEMESTRE/Introduçao ao Direito e ao Pensamento Juridico/IDPJ.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/direito/I ANO/I semestre/direito.png" alt="Introdução ao Direito e ao Pensamento Jurídica"></a>
+                 
+                    <div class="descricao">
+                        <a href="./Cadeiras/I SEMESTRE/Introduçao ao Direito e ao Pensamento Juridico/IDPJ.html">
+                            <h3>Introdução ao Direito e ao Pensamento Jurídica</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="arrow">
+                    <!-- ceta -->
+                    <a href="IIsemestre.html" id="right_arrow"><img src="../../../IMGS & ICONS/ICONS/cursos/right.svg" alt="" class="right_arrow" id="right_arrow"></a>
+                </div>
+
+            </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>©2024. Nexus. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>

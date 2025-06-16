@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../STYLE/css/scorcese.css">
+    <link rel="stylesheet" href="../STYLE/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Nexus</a></div>
+            <ul class="links">
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+                <!-- <a href="tarantino.html" class="action_btn">Entrar</a> -->
+
+            <div class="toggle_btn">
+                <!-- https://fontawesome.com/icons/bars?f=classic&s=solid -->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="../INICIO/Inicio.html">Inicio</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contacto</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+        }
+    </script>
+
+    <div class="main">
+        
+
+        <div class="left">
+
+            <h2>Crie uma Conta!</h2>
+
+            <div class="input-container">
+                <img src="../IMGS & ICONS/ICONS/cursos/TEMAS DOWNLOAD/user.svg" alt="User Icon" class="input-icon">
+                <input type="text" class="email" placeholder="Digite o Seu Nome Completo" required>
+            </div>
+            
+            <div class="input-container">
+                <img src="../IMGS & ICONS/ICONS/login/download.svg" alt="Email Icon" class="input-icon">
+                <input type="email" class="email" placeholder="Digite o Seu Email" required>
+            </div>
+            
+            <div class="input-container">
+                <img src="../IMGS & ICONS/ICONS/login/password.svg" alt="Password Icon" class="input-icon">
+                <input type="password" class="password" placeholder="Digite a Sua Senha" required>
+            </div>
+            
+            <div class="input-container">
+                <img src="../IMGS & ICONS/ICONS/login/password.svg" alt="Password Icon" class="input-icon">
+                <input type="password" class="password" placeholder="Confirme a Sua Senha" required>
+            </div>
+            
+
+            <div class="termos">
+                <input type="checkbox" id="termos" name="termos" value="" class="termos"> <br>
+                <label for="termos" class="termo-paragraf">Concordo com os <a href="" style="color: #6495ed;">Termos e Condições</a> do Site</label><br>
+            </div>
+
+            <input type="button" value="CRIAR CONTA" class="login">
+
+        </div>
+    </div>
+
+    <footer class="footer" style="color: white;">
+        <p>©2024. Nexus. ALL RIGHTS RESERVED.</p>
+    </footer>
+    
+</body>
+</html>

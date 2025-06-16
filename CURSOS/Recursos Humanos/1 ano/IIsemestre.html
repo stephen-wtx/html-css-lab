@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Humanos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../../STYLE/css/scorcese.css">
+    <link rel="stylesheet" href="../../../STYLE/css/style.css">
+    <link rel="stylesheet" href="../../../STYLE/css/semestre.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Nexus</a></div>
+            <ul class="links">
+                <li><a href="../../../INICIO/Inicio.html">Inicio</a></li>
+                <li><a href="../../cursos.html">Cursos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="../../../CONTACT/contact.html">Contacto</a></li>
+            </ul>
+
+                <a href="../../../INICIO/Inicio.html" class="action_btn">Sair</a>
+
+            <div class="toggle_btn">
+                <!-- https://fontawesome.com/icons/bars?f=classic&s=solid -->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="../../../INICIO/Inicio.html">Inicio</a></li>
+            <li><a href="../../cursos.html">Cursos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="../../../CONTACT/contact.html">Contacto</a></li>
+            <li><a href="../../../INICIO/Inicio.html" class="action_btn">Sair</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+        }
+    </script>
+
+    <main>
+        <h2>II Semestre - Cadeiras</h2>
+        <!-- container pra semestre -->
+        <div class="semestre">
+                <!-- 1a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/II SEMESTRE/Princípios de Marketing/PM.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/rh/I ANO/II semestre/marketing.png" alt="principios-marketing"></a>
+
+                    <div class="descricao">
+                        <a href="./Conteúdo/II SEMESTRE/Princípios de Marketing/PM.html">
+                            <h3>Princípios de Marketing<h3>
+                        </a>
+                    
+                    </div>
+                </div>
+
+
+                 <!-- 2a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/II SEMESTRE/Introdução a Gestão de RH/IGRH.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/rh/I ANO/II semestre/intro-rh.png" alt="introducao-gestao"></a>
+                    
+                    <div class="descricao">
+                        <a href="./Conteúdo/II SEMESTRE/Introdução a Gestão de RH/IGRH.html">
+                            <h3>Introdução a Gestão de RH</h3>
+                        </a>
+              
+                    </div>
+                </div>
+
+                 <!-- 3a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/II SEMESTRE/Inglês Geral II/IG II.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/rh/I ANO/II semestre/english.png" alt="ingles II"></a>
+                    
+                    <div class="descricao">
+                        <a href="./Conteúdo/II SEMESTRE/Inglês Geral II/IG II.html">
+                            <h3>Inglês Geral II</h3>
+                            
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- 4a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/II SEMESTRE/Noções de Direito/ND.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/rh/I ANO/II semestre/direito.png" alt="direito"> </a>
+                        <div class="descricao">
+                            <a href="./Conteúdo/II SEMESTRE/Noções de Direito/ND.html">
+                                <h3>Noções de Direito</h3>
+                            </a>
+                    </div>
+                </div>
+
+
+                 <!-- 5a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/II SEMESTRE/Técnicas de Expressão e Comunicação/TEC.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/rh/I ANO/II semestre/tecnicas-expressao.png" alt=""></a>
+                 
+                    <div class="descricao">
+                        <a href="./Conteúdo/II SEMESTRE/Técnicas de Expressão e Comunicação/TEC.html">
+                            <h3>Técnicas de Expressão e Comunicação</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cadeiras">
+                    <a href="./Conteúdo/II SEMESTRE/Ética Geral/EG.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/rh/I ANO/II semestre/ethics.png" alt=""></a>
+                 
+                    <div class="descricao">
+                        <a href="./Conteúdo/II SEMESTRE/Ética Geral/EG.html">
+                            <h3>Ética Geral</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="arrow">
+                    <!-- ceta -->
+                    <a href="Isemestre.html" id="right_arrow"><img src="../../../IMGS & ICONS/ICONS/cursos/left.svg" alt="" class="right_arrow" id="right_arrow"></a>
+                </div>
+
+            </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>©2024. Nexus. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>

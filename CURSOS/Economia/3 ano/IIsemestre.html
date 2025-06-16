@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economia & Gestão</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../../STYLE/css/scorcese.css">
+    <link rel="stylesheet" href="../../../STYLE/css/style.css">
+    <link rel="stylesheet" href="../../../STYLE/css/semestre.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Nexus</a></div>
+            <ul class="links">
+                <li><a href="../../../INICIO/Inicio.html">Inicio</a></li>
+                <li><a href="../../cursos.html">Cursos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="../../../CONTACT/contact.html">Contacto</a></li>
+            </ul>
+
+                <a href="../../../INICIO/Inicio.html" class="action_btn">Sair</a>
+
+            <div class="toggle_btn">
+                <!-- https://fontawesome.com/icons/bars?f=classic&s=solid -->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="../../../INICIO/Inicio.html">Inicio</a></li>
+            <li><a href="../../cursos.html">Cursos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="../../../CONTACT/contact.html">Contacto</a></li>
+            <li><a href="../../../INICIO/Inicio.html" class="action_btn">Sair</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+        }
+    </script>
+
+    <main>
+        <h2>II Semestre - Cadeiras</h2>
+        <!-- container pra semestre -->
+        <div class="semestre">
+                <!-- 1a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteudo/Cadeiras/II SEMESTRE/Economia de Ambiente e Recursos/EAR.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/economia/III ANO/II semestre/economia-ambiente.png" alt="Economia de Ambiente e Recursos"></a>
+
+                    <div class="descricao">
+                        <a href="./Conteudo/Cadeiras/II SEMESTRE/Economia de Ambiente e Recursos/EAR.html">
+                            <h3>Economia de Ambiente e Recursos<h3>
+                        </a>
+                    
+                    </div>
+                </div>
+
+
+                 <!-- 2a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteudo/Cadeiras/II SEMESTRE/Macroeconomia III/M III.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/economia/III ANO/II semestre/macroeconomia.png" alt="Macroeconomia III"></a>
+                    
+                    <div class="descricao">
+                        <a href="./Conteudo/Cadeiras/II SEMESTRE/Macroeconomia III/M III.html">
+                            <h3>Macroeconomia III</h3>
+                        </a>
+              
+                    </div>
+                </div>
+
+                 <!-- 3a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteudo/Cadeiras/II SEMESTRE/Econometria II/E II.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/economia/III ANO/II semestre/econometria.png" alt="Econometria II"></a>
+                    
+                    <div class="descricao">
+                        <a href="./Conteudo/Cadeiras/II SEMESTRE/Econometria II/E II.html">
+                            <h3>Econometria II</h3>
+                            
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- 4a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteudo/Cadeiras/II SEMESTRE/Mercados e Investimentos Financeiros/MIF.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/economia/III ANO/II semestre/mercado-investimento.png" alt="Mercados e Investimentos  Financeiros"> </a>
+                        <div class="descricao">
+                            <a href="./Conteudo/Cadeiras/II SEMESTRE/Mercados e Investimentos Financeiros/MIF.html">
+                                <h3>Mercados e Investimentos  Financeiros</h3>
+                            </a>
+                    </div>
+                </div>
+
+
+                 <!-- 5a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteudo/Cadeiras/II SEMESTRE/Economia Publica/EP.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/economia/III ANO/II semestre/economia-publica.png" alt="Economia Pública"></a>
+                 
+                    <div class="descricao">
+                        <a href="./Conteudo/Cadeiras/II SEMESTRE/Economia Publica/EP.html">
+                            <h3>Economia Pública</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="cadeiras">
+                    <a href="./Conteudo/Cadeiras/II SEMESTRE/Projecto de Simulaçao Empresarial/PSE.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/economia/III ANO/II semestre/simulacao-empresarial.png" alt="Projecto de Simulação Empresarial"></a>
+                 
+                    <div class="descricao">
+                        <a href="./Conteudo/Cadeiras/II SEMESTRE/Projecto de Simulaçao Empresarial/PSE.html">
+                            <h3>Projecto de Simulação Empresarial</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="arrow">
+                    <!-- ceta -->
+                    <a href="Isemestre.html" id="right_arrow"><img src="../../../IMGS & ICONS/ICONS/cursos/left.svg" alt="" class="right_arrow" id="right_arrow"></a>
+                </div>
+
+            </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>©2024. Nexus. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>

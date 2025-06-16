@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Humanos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../../STYLE/css/scorcese.css">
+    <link rel="stylesheet" href="../../../STYLE/css/style.css">
+    <link rel="stylesheet" href="../../../STYLE/css/semestre.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Nexus</a></div>
+            <ul class="links">
+                <li><a href="../../../INICIO/Inicio.html">Inicio</a></li>
+                <li><a href="../../cursos.html">Cursos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="../../../CONTACT/contact.html">Contacto</a></li>
+            </ul>
+
+                <a href="../../../INICIO/Inicio.html" class="action_btn">Sair</a>
+
+            <div class="toggle_btn">
+                <!-- https://fontawesome.com/icons/bars?f=classic&s=solid -->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="../../../INICIO/Inicio.html">Inicio</a></li>
+            <li><a href="../../cursos.html">Cursos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="../../../CONTACT/contact.html">Contacto</a></li>
+            <li><a href="../../../INICIO/Inicio.html" class="action_btn">Sair</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+        }
+    </script>
+
+    <main>
+        <h2>I Semestre - Cadeiras</h2>
+        <!-- container pra semestre -->
+        <div class="semestre">
+                <!-- 1a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/I SEMESTRE/Auditoria de Recursos Humanos/ARH.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/rh/IV ANO/I semestre/auditoria rh.png" alt="auditoria-recursos-humanos"></a>
+                    
+                    <div class="descricao">
+                        <a href="./Conteúdo/I SEMESTRE/Auditoria de Recursos Humanos/ARH.html">
+                            <h3>Auditoria de Recursos Humanos</h3>
+                        </a>
+              
+                    </div>
+                </div>
+
+
+                <!-- 2a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/I SEMESTRE/Ética e Deontologia/ED.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/rh/IV ANO/I semestre/ethics.png" alt="ética-deontologia-profissional"></a>
+
+                    <div class="descricao">
+                        <a href="./Conteúdo/I SEMESTRE/Ética e Deontologia/ED.html">
+                            <h3>Ética e Deontologia Profissional</h3>
+                        </a>
+                    
+                    </div>
+                </div>
+
+
+
+
+                 <!-- 3a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/I SEMESTRE/Gestão do RH Internacional/GRHI.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/rh/IV ANO/I semestre/rh-internacional.png" alt="gestão-rh-internacional"></a>
+                    
+                    <div class="descricao">
+                        <a href="./Conteúdo/I SEMESTRE/Gestão do RH Internacional/GRHI.html">
+                            <h3>Gestão de RH Internacional</h3>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- 4a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/I SEMESTRE/SIG (Sistema de Informação Empresarial)/SIG.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/rh/IV ANO/I semestre/sig.png" alt="sistema-informação-empressarial II"> </a>
+                        <div class="descricao">
+                            <a href="./Conteúdo/I SEMESTRE/SIG (Sistema de Informação Empresarial)/SIG.html">
+                                <h3>SIG(Sistema de Informação Empresarial II)</h3>
+                            </a>
+                    </div>
+                </div>
+
+            </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>©2024. Nexus. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>

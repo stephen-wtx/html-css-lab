@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Humanos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../../STYLE/css/scorcese.css">
+    <link rel="stylesheet" href="../../../STYLE/css/style.css">
+    <link rel="stylesheet" href="../../../STYLE/css/semestre.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Nexus</a></div>
+            <ul class="links">
+                <li><a href="../../../INICIO/Inicio.html">Inicio</a></li>
+                <li><a href="../../cursos.html">Cursos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="../../../CONTACT/contact.html">Contacto</a></li>
+            </ul>
+
+                <a href="../../../INICIO/Inicio.html" class="action_btn">Sair</a>
+
+            <div class="toggle_btn">
+                <!-- https://fontawesome.com/icons/bars?f=classic&s=solid -->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="../../../INICIO/Inicio.html">Inicio</a></li>
+            <li><a href="../../cursos.html">Cursos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="../../../CONTACT/contact.html">Contacto</a></li>
+            <li><a href="../../../INICIO/Inicio.html" class="action_btn">Sair</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+        }
+    </script>
+
+    <main>
+        <h2>I Semestre - Cadeiras</h2>
+        <!-- container pra semestre -->
+        <div class="semestre">
+                <!-- 1a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/I SEMESTRE/Estratégia de Recursos Humanos/ERH.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/rh/III ANO/I semestre/estrategia-rh.png" alt="estrategia-rh"></a>
+                    
+                    <div class="descricao">
+                        <a href="./Conteúdo/I SEMESTRE/Estratégia de Recursos Humanos/ERH.html">
+                            <h3>Estratégia de Recursos Humanos</h3>
+                        </a>
+                    </div>
+                </div>
+
+
+                
+                 <!-- 2a cadeira -->
+                 <div class="cadeiras">
+                    <a href="./Conteúdo/I SEMESTRE/Gestão do Conhecimento/GC.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/rh/III ANO/I semestre/gestao-conhecimento.png" alt="gestao-conhecimento"></a>
+                    
+                    <div class="descricao">
+                        <a href="./Conteúdo/I SEMESTRE/Gestão do Conhecimento/GC.html">
+                            <h3>Gestão do Conhecimento</h3>
+                        </a>
+              
+                    </div>
+                </div>
+
+
+                <!-- 3a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/I SEMESTRE/Gestão de Projectos/GP.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/rh/III ANO/I semestre/gestao-projectos.png" alt="gestao-projectos"></a>
+                 
+                    <div class="descricao">
+                        <a href="./Conteúdo/I SEMESTRE/Gestão de Projectos/GP.html">
+                            <h3>Gestão de Projectos</h3>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- 4a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/I SEMESTRE/Legislação Laboral/LL.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/rh/III ANO/I semestre/legislacao-laboral.png" alt="legislação-laboral"></a>
+
+                    <div class="descricao">
+                        <a href="./Conteúdo/I SEMESTRE/Legislação Laboral/LL.html">
+                            <h3>Legislação Laboral</h3>
+                        </a>
+                    
+                    </div>
+                </div>
+
+
+
+                 <!-- 5a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/I SEMESTRE/Psicossociologia das Organizações/PO.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/rh/III ANO/I semestre/psicossociologia.png" alt="psicossociologia-organizações"> </a>
+                        <div class="descricao">
+                            <a href="./Conteúdo/I SEMESTRE/Psicossociologia das Organizações/PO.html">
+                                <h3>Psicossociologia das Organizações</h3>
+                            </a>
+                    </div>
+                </div>
+
+                <div class="arrow">
+                    <!-- ceta -->
+                    <a href="IIsemestre.html" id="right_arrow"><img src="../../../IMGS & ICONS/ICONS/cursos/right.svg" alt="" class="right_arrow" id="right_arrow"></a>
+                </div>
+
+            </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>©2024. Nexus. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>

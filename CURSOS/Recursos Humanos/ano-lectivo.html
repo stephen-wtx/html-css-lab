@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ano lectivo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../STYLE/css/scorcese.css">
+    <link rel="stylesheet" href="../../STYLE/css/style.css">
+    <link rel="stylesheet" href="../../STYLE/css/ano-lectivo.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Nexus</a></div>
+            <ul class="links">
+                <li><a href="../../INICIO/Inicio.html">Inicio</a></li>
+                <li><a href="../cursos.html">Cursos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="../../CONTACT/contact.html">Contacto</a></li>
+            </ul>
+
+                <a href="../../INICIO/Inicio.html" class="action_btn" id="sair">Sair</a>
+
+            <div class="toggle_btn">
+                <!-- https://fontawesome.com/icons/bars?f=classic&s=solid -->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="../../INICIO/Inicio.html">Inicio</a></li>
+            <li><a href="../cursos.html">Cursos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="../../CONTACT/contact.html">Contacto</a></li>
+            <li><a href="../../INICIO/Inicio.html" class="action_btn">Sair</a></li>
+        </div>
+    </header>
+
+    <script>
+        const sair = document.getElementById("sair");
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+        }
+
+        sair.onclick = function(){
+            alert('Deseja sair?')
+        }
+    </script>
+
+    <div class="container">
+        <h2>Selecione o ano lectivo</h2>
+
+        <div class="ano"><a href="1 ano/Isemestre.html">1˚ Ano</a></div>
+        <div class="ano"><a href="./2 ano/Isemestre.html">2˚ Ano</a></div>
+        <div class="ano"><a href="./3 ano/Isemestre.html">3˚ Ano</a></div>
+        <div class="ano"><a href="./4 ano/Isemestre.html">4˚ Ano</a></div>
+    </div>
+
+    <footer class="footer">
+        <p>©2024. Nexus. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologia de Informação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../../STYLE/css/scorcese.css">
+    <link rel="stylesheet" href="../../../STYLE/css/style.css">
+    <link rel="stylesheet" href="../../../STYLE/css/semestre.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Nexus</a></div>
+            <ul class="links">
+                <li><a href="../../../INICIO/Inicio.html">Inicio</a></li>
+                <li><a href="../../cursos.html">Cursos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="../../../CONTACT/contact.html">Contacto</a></li>
+            </ul>
+
+                <a href="../../../INICIO/Inicio.html" class="action_btn">Sair</a>
+
+            <div class="toggle_btn">
+                <!-- https://fontawesome.com/icons/bars?f=classic&s=solid -->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="../../../INICIO/Inicio.html">Inicio</a></li>
+            <li><a href="../../cursos.html">Cursos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="../../../CONTACT/contact.html">Contacto</a></li>
+            <li><a href="../../../INICIO/Inicio.html" class="action_btn">Sair</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+        }
+    </script>
+
+    <main>
+        <h2>I Semestre - Cadeiras</h2>
+        <!-- container pra semestre -->
+        <div class="semestre">
+                <!-- 1a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/I SEMESTRE/Análise & Desenho de Base de Dados/ADBD.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/ti/II ANO/I semestre/base-dados.png" alt="desenho-base-dados-img"></a>
+
+                    <div class="descricao">
+                        <a href="./Conteúdo/I SEMESTRE/Análise & Desenho de Base de Dados/ADBD.html">
+                            <h3>Análise & Desenho de Base de Dados</h3>
+                        </a>
+                    
+                    </div>
+                </div>
+
+
+                 <!-- 2a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/I SEMESTRE/Análise & Desenho Orientado à Objectos/ADOO.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/ti/II ANO/I semestre/desenho-orientado-objectos.png" alt="ingles-img"></a>
+                    
+                    <div class="descricao">
+                        <a href="./Conteúdo/I SEMESTRE/Análise & Desenho Orientado à Objectos/ADOO.html">
+                            <h3>Análise & Desenho Orientado à Objectos</h3>
+                        </a>
+              
+                    </div>
+                </div>
+
+                 <!-- 3a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/I SEMESTRE/Estrutura de Dados & Algoritmos/EDA.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/ti/II ANO/I semestre/estrutura-dados.png" alt="Estrutura de Dados & Algoritmos"> </a>
+                        <div class="descricao">
+                            <a href="./Conteúdo/I SEMESTRE/Estrutura de Dados & Algoritmos/EDA.html">
+                                <h3>Estrutura de Dados & Algoritmos</h3>
+                            </a>
+                    </div>
+                </div>
+
+
+                 <!-- 5a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/I SEMESTRE/Fundamentos de Desenhos de Páginas Web/FDPW.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/ti/II ANO/I semestre/paginas-web.png" alt="Fundamentos de Desenhos de Páginas Web"></a>
+                 
+                    <div class="descricao">
+                        <a href="./Conteúdo/I SEMESTRE/Fundamentos de Desenhos de Páginas Web/FDPW.html">
+                            <h3>Fundamentos de Desenhos de Páginas Web</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 6a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/I SEMESTRE/Ingles III/ingles III.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/ti/II ANO/I semestre/english.png" alt="Inglês III"></a>
+                 
+                    <div class="descricao">
+                        <a href="./Conteúdo/I SEMESTRE/Ingles III/ingles III.html">
+                            <h3>Inglês III</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="arrow">
+                    <!-- ceta -->
+                    <a href="IIsemestre.html" id="right_arrow"><img src="../../../IMGS & ICONS/ICONS/cursos/right.svg" alt="" class="right_arrow" id="right_arrow"></a>
+                </div>
+
+            </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>©2024. Nexus. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>

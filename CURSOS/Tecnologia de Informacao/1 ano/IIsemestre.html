@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologia de Informação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../../STYLE/css/scorcese.css">
+    <link rel="stylesheet" href="../../../STYLE/css/style.css">
+    <link rel="stylesheet" href="../../../STYLE/css/semestre.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Nexus</a></div>
+            <ul class="links">
+                <li><a href="../../../INICIO/Inicio.html">Inicio</a></li>
+                <li><a href="../../cursos.html">Cursos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="../../../CONTACT/contact.html">Contacto</a></li>
+            </ul>
+
+                <a href="../../../INICIO/Inicio.html" class="action_btn">Sair</a>
+
+            <div class="toggle_btn">
+                <!-- https://fontawesome.com/icons/bars?f=classic&s=solid -->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="../../../INICIO/Inicio.html">Inicio</a></li>
+            <li><a href="../../cursos.html">Cursos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="../../../CONTACT/contact.html">Contacto</a></li>
+            <li><a href="../../../INICIO/Inicio.html" class="action_btn">Sair</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+        }
+    </script>
+
+    <main>
+        <h2>II Semestre - Cadeiras</h2>
+        <!-- container pra semestre -->
+        <div class="semestre">
+                <!-- 1a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/II SEMESTRE/Fundamentos de Programação/FP.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/ti/I ANO/II semestre/fundamentos-programacao.png" alt="Fundamentos de Programação"></a>
+
+                    <div class="descricao">
+                        <a href="./Conteúdo/II SEMESTRE/Fundamentos de Programação/FP.html">
+                            <h3>Fundamentos de Programação<h3>
+                        </a>
+                    
+                    </div>
+                </div>
+
+
+                 <!-- 2a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/II SEMESTRE/Fundamentos de Redes de Computadores/FRC.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/ti/I ANO/II semestre/fundamentos-redes.png" alt="Fundamentos de Redes de Computadores"></a>
+                    
+                    <div class="descricao">
+                        <a href="./Conteúdo/II SEMESTRE/Fundamentos de Redes de Computadores/FRC.html">
+                            <h3>Fundamentos de Redes de Computadores</h3>
+                        </a>
+              
+                    </div>
+                </div>
+
+                 <!-- 3a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/II SEMESTRE/Habilidades de Vida/HV.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/ti/I ANO/II semestre/hablidades-vida.png" alt="Habilidades de Vida"></a>
+                    
+                    <div class="descricao">
+                        <a href="./Conteúdo/II SEMESTRE/Habilidades de Vida/HV.html">
+                            <h3>Habilidades de Vida</h3>
+                            
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- 4a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/II SEMESTRE/Inglês II/Ingles II.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/ti/I ANO/II semestre/english.png" alt="Ingles II"> </a>
+                        <div class="descricao">
+                            <a href="./Conteúdo/II SEMESTRE/Inglês II/Ingles II.html">
+                                <h3>Inglês II</h3>
+                            </a>
+                    </div>
+                </div>
+
+
+                 <!-- 5a cadeira -->
+                <div class="cadeiras">
+                    <a href="./Conteúdo/II SEMESTRE/Plataforma Hardware & Software/PHS.html"><img src="../../../IMGS & ICONS/ICONS/cadeiras/ti/I ANO/II semestre/hardware-software.png" alt="Plataforma de Hardware e Software"></a>
+                 
+                    <div class="descricao">
+                        <a href="./Conteúdo/II SEMESTRE/Plataforma Hardware & Software/PHS.html">
+                            <h3>Plataforma de Hardware e Software</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ceta -->
+                <div class="arrow">
+                    <a href="Isemestre.html" rel="previous" id="right_arrow"><img src="../../../IMGS & ICONS/ICONS/cursos/left.svg" alt="" class="right_arrow" id="right_arrow"></a>
+                </div>
+
+            </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>©2024. Nexus. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>
