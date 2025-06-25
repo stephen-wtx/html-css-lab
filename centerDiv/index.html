@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to center a Div?</title>
+</head>
+<style>
+    body {
+        font-family: cursive;
+    }
+    .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px dashed crimson;
+    }
+
+    .flex-item {
+        text-align: center;
+        background-color: cornflowerblue;
+        width: 100px;
+        height: 100px;
+        margin: 2px;
+    }
+
+    .grid-container {
+        display: grid;
+        place-items: center;
+        border: 2px dashed crimson;
+
+    }
+
+    .grid-item {
+        background-color: cornflowerblue;
+        width: 100px;
+        height: 100px;
+        margin: 2px;
+    }
+    
+
+
+
+</style>
+<body>
+    <h1>Centering Divs</h1>
+    <h2>Centering a div with FlexBox</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>item</p>
+        </div>
+
+        <div class="flex-item">
+            <p>item</p>
+        </div>
+
+        <div class="flex-item">
+            <p>item</p>
+        </div>
+    </div>
+
+    <h2>Centering a div with Grid</h2>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <p>item</p>
+        </div>
+        <div class="grid-item">
+            <p>item</p>
+        </div>
+
+        <div class="grid-item">
+            <p>item</p>
+        </div>
+
+
+        
+    </div>
+</body>
+</html>

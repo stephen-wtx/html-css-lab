@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/submit" method="POST" enctype="multipart/form-data" autocomplete="off">
+        <!-- 
+        action: where the form data goes when submitted
+        method: POST for sending data securely
+        enctype: allows uploading files
+        autocomplete: lets browser suggest saved values 
+        -->
+
+        <h1>Registration Form</h1>
+        <!-- TEXT INPUT -->
+         <label for="fullname">Full Name:</label>
+         <input type="text" name="FUllName" id="fullName" placeholder="Your full name" required minlength="3" maxlength="30">
+         <!-- 
+         type="text": single-line text input
+         placeholder: hint text
+         required: cannot submit empty
+         minlength/maxlength: limits the number of characters
+          -->
+         <br><br>
+
+         <!-- EMAIL INPUT -->
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="email@gmail.com" required>
+          <!-- type="email": validates input is a proper email -->
+           <br><br>
+
+        <!-- PASSWORD INPUT -->
+         <label for="password">Password:</label>
+         <input type="password" name="password" id="password" required minlength="6">
+         <!-- type="password": hides input with dots or asterisks -->
+          <br><br>
+
+        <!-- NUMBER INPUT -->
+         <label for="age">Age:</label>
+         <input type="number" name="age" id="age" min="1" max="100">
+         <!-- type="number": only allows input with optional max/min -->
+        <br><br>
+
+        <!-- TEL INPUT -->
+         <label for="phone">Phone:</label>
+         <input type="tel" name="phone" id="phone" placeholder="84 123 456" pattern="[278][0-9]\s[0-9]{3}\s[0-9]{4}" maxlength="11" required>
+         <!-- type="tel": for phone numbers, with pattern validation -->
+          <br><br>
+
+
+        <!-- DATE INPUT -->
+          <label for="date">Date:</label>
+          <input type="date" name="date" id="date">
+          <br><br>
+
+          <!-- type="date": date picker -->
+
+          <!-- RADIO BUTTONS -->
+           <input type="radio" name="gender" id="male">
+           <label for="male">Male</label>
+
+           <input type="radio" name="gender" id="female">
+           <label for="female">Female</label>
+           <br><br>
+
+           <!-- 
+           type="radio": select one option among many
+           same 'name' groups them together
+            -->
+
+            <!-- CHECKBOX -->
+             <label>
+                <input type="checkbox" name="subscribe" value="yes">
+                Subscribe
+             </label>
+             <br><br>
+             <!-- type="checkbox" toggle on/off-->
+
+             <!-- SELECT DROPDOWN -->
+            <label for="country">Country:</label>
+            <select name="country" id="country" required>
+              <option value="">-- Select a Country --</option>
+              <option value="ang">Angola</option>
+              <option value="mz">Mozambique</option>
+              <option value="tz">Tanzania</option>
+              <option value="zm">Zambia</option>
+            </select>
+            <!-- select + option: dropdown menu -->
+            <br><br>
+
+            <!-- TEXTAREA -->
+             <label for="bio">Short Bio:</label>
+             <textarea name="bio" id="bio" rows="4" cols="50" placeholder="Tell us a little about yourself . . ."></textarea>
+             <!-- textarea: multi-line input -->
+              <br><br>
+
+            <!-- FILE UPLOAD -->
+             <label for="avatar">Upload Profile Picture:</label>
+             <input type="file" name="avatar" id="avatar" accept="image/*">
+             <!-- type="file": allows user to upload files, accept="image/*" limits to images-->
+             <br><br>
+
+             <!-- RANGE SLIDER -->
+             <label for="satisfaction">Satisfaction (0-10):</label>
+             <input type="range" id="satisfaction" name="satisfaction" min="1" max="10">
+             <!-- type="range": slider input -->
+            <br><br>
+
+            <!-- HIDDEN INPUT -->
+             <input type="hidden" name="form_version" value="v1.2">
+             <!-- type="hidden": sent with form but not visible to user -->
+
+             <!-- SUBMIT BUTTON -->
+              <button type="submit">Submit</button>
+              <!-- type="submit": submits the form -->
+
+              <!-- RESET BUTTON -->
+               <button type="reset">Clear</button>
+               <!-- type="reset": resets all form fields -->
+
+    </form>
+
+    <script>
+document.getElementById("phone").addEventListener("input", function (e) {
+  let input = e.target.value.replace(/\D/g, ''); // Remove all non-digits
+  if (input.length > 9) input = input.slice(0, 9); // Max 9 digits
+
+  let formatted = input;
+  if (input.length > 2 && input.length <= 5) {
+    formatted = input.slice(0, 2) + " " + input.slice(2);
+  } else if (input.length > 5) {
+    formatted = input.slice(0, 2) + " " + input.slice(2, 5) + " " + input.slice(5);
+  }
+
+  e.target.value = formatted;
+});
+</script>
+
+</body>
+</html>

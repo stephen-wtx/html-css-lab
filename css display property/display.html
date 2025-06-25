@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .container div {
+        background-color: hsl(0, 100%, 75%);
+        margin: auto;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+
+    span {
+        background-color: hsl(204, 100%, 75%);
+        width: 100px;
+        height: 100px;
+        display: block;
+        text-align: center;
+    }
+
+    .flex-container {
+        display: flex;
+        background-color: #f0f0f0;
+        padding: 10px;
+    }
+
+    .flex-item {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        margin: 5px;
+        flex: 1;
+    }
+
+    .grid-container {
+        display: grid;
+        background-color: #f0f0f0;
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .grid-item {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .inline-item {
+        display: inline;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .inline-container {
+        border: 3px solid #ccc;
+        padding: 15px;
+    }
+</style>
+<body>
+
+    <!-- div - property specificies if/how
+      an element is displayed
+
+    block-level - start on a new line, take up full width available
+    (h1, div, p, form, header, footer)
+
+    inline - do not start on a new line, width is limited to what is needed
+    (span, a, img) 
+    
+    -->
+
+    <h2>Display property</h2>
+
+    <h4>Display: inline-block</h4>
+
+    <div class="container">
+        <div>Inline-block</div>
+        <div>Inline-block 2</div>
+        <div>Inline-block 3</div>
+        <div>Inline-block 4</div>
+    </div>
+
+    <span>Block</span>
+
+    <h4>Inline</h4>
+
+    <div class="inline-container">
+        <div class="inline-item">item 1</div>
+        <div class="inline-item">item 2</div>
+        <div class="inline-item">item 3</div>
+    </div>
+
+    <h4>Display: Flex</h4>
+
+    <div class="flex-container">
+        <div class="flex-item">item 1</div>
+        <div class="flex-item">item 2</div>
+        <div class="flex-item">item 3</div>
+        <div class="flex-item">item 4</div>
+        <div class="flex-item">item 5</div>
+    </div>
+
+    <h4>Display: Grid</h4>
+
+    <div class="grid-container">
+        <div class="grid-item">item 1</div>
+        <div class="grid-item">item 2</div>
+        <div class="grid-item">item 3</div>
+    </div>
+
+</body>
+</html>

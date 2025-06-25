@@ -1,0 +1,102 @@
+
+/* Estiliza o titulo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    padding: 40px;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+/* Centraliza e estiliza o formulario */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(150, 149, 149);
+}
+
+/* Estilo basico dos labels */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+/* Estilo geral para todos os inputs, selects, textareas */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="range"],
+textarea
+select {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: 0.2s ease-in-out;
+}
+
+/* foco na borda */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 3px #3498db;
+}
+
+/* Estilo dos botoes */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Ajustes para grupos como radio/checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+
+/* Espacamento entre blocos */
+p, br {
+    margin: 12px 0;
+}
+
+
+/* Responsivo para telas menores  */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
+

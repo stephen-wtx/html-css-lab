@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+</head>
+<style>
+    a {
+        text-decoration: none;
+        color: hsl(221, 100%, 74%);
+    }
+    a:hover {
+        color: hsl(240, 100%, 50%);
+        font-size: 1.1em;
+    }
+
+    a:active {
+        color: hsl(0, 68%, 42%);
+    }
+
+    li:hover {
+        background-color: yellow;
+        display: inline;
+    }
+
+    li:nth-child(odd){
+        background-color: yellowgreen;
+    }
+
+    #surprise p {
+        display: none;
+    }
+
+    button {
+        background-color: orange;
+        width: 100px;
+        text-align: center;
+        font-weight: bold;
+    }
+     #surprise:active p{
+        color: red;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.3em;
+        display: block;
+     }
+
+
+</style>
+<body>
+    <a href="https://google.com">Google</a>
+
+
+    <ul>
+        <li>This is #</li>
+        <li>This is 1</li>
+        <li>This is 2</li>
+        <li>This is 3</li>
+        <li>This is 4</li>
+        <li>This is 6</li>
+        <li>This is 7</li>
+        <li>This is 8</li>
+        <li>This is 9</li>
+        <li>This is 10</li>
+    </ul>
+
+    <div id="surprise">
+        
+        <button>SURPRISE</button>
+        <p>SURPRISE MOTHER F*CKER!</p>
+    </div>
+</body>
+</html>

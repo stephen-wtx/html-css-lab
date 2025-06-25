@@ -1,0 +1,62 @@
+1. :hover
+This pseudo-class applies styles when the user hovers over an element.
+
+
+button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+2. :active
+This pseudo-class applies styles when an element is being activated, such as when a button is clicked.
+
+
+button:active {
+    background-color: #3e8e41; /* Darker Green */
+    color: white;
+}
+3. :focus
+This pseudo-class applies styles when an element has focus, such as when a user clicks on a text input.
+
+
+input:focus {
+    border: 2px solid #4CAF50; /* Green border */
+    outline: none;
+}
+4. :nth-child()
+This pseudo-class applies styles to elements based on their position in a parent element.
+
+
+ul li:nth-child(odd) {
+    background-color: #f2f2f2; /* Light gray */
+}
+
+ul li:nth-child(even) {
+    background-color: #ffffff; /* White */
+}
+5. :first-child and :last-child
+These pseudo-classes apply styles to the first and last child elements within a parent.
+
+
+p:first-child {
+    font-weight: bold;
+}
+
+p:last-child {
+    font-style: italic;
+}
+6. :not()
+This pseudo-class applies styles to elements that do not match a certain selector.
+
+
+button:not(.primary) {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+7. :checked
+This pseudo-class applies styles to checked elements, such as checkboxes or radio buttons.
+
+
+input[type="checkbox"]:checked {
+    background-color: #4CAF50; /* Green */
+}
+These pseudo-classes help you create dynamic and interactive web pages by changing the appearance of elements based on user actions or their position in the document.
