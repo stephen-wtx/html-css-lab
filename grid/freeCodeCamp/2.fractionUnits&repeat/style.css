@@ -1,0 +1,23 @@
+body {
+    background: #ffecae;
+    color: #fff;
+}
+.container {
+    display: grid;
+    grid-template: repeat(2, 50px) / repeat(3, 1fr);  /* shorthand for grid-template-rows and grid-templates-columns */
+    gap: 3px;
+    text-align: center;
+}
+
+
+#blue {
+    background: #85c4b4;
+}
+
+#red {
+    background: #fe7361;
+}
+
+#yellow {
+    background: #ffc760;
+}

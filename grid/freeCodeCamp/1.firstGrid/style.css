@@ -1,0 +1,27 @@
+body {
+    background: #ffecae;
+    color: #fff;
+}
+
+.container {
+    display: grid;
+    /* grid-template-columns: 1fr 3fr 1fr; fr - fraction unit */
+    /* grid-template-columns: repeat(3, 1fr); 3 is the number of column/row, and 1fr the size */
+    /* grid-template-rows: repeat(2, 50px); */
+    grid-template: repeat(2, 50px) / repeat(3, 1fr);
+    gap: 3px;;
+    gap: 3px;
+    text-align: center;
+}
+
+#blue {
+    background: #85c4b4;
+}
+
+#red {
+    background: #fe7361;
+}
+
+#yellow {
+    background: #ffc760;
+}

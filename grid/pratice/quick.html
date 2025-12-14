@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+</head>
+<style>
+    :root {
+        --padding-top: 1.4rem;
+        --display: flex;
+        --justify-content: center;
+        --align-items: center;
+    }
+
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background: #ffecae;
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    h1 {
+        text-align: center;
+        color: #fe7361;
+    }
+
+    .list {
+        list-style: none;
+        display: grid;
+        gap: 3px;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "title title"
+        "content-1 content-2"
+        "content-3 content-4"
+        "footer footer";
+    }
+
+    #title {
+        background: #fe7361;
+        grid-area: title;
+        display: var(--display);
+        justify-content: var(--justify-content);
+        align-items: var(--align-items);
+    }
+
+    #content-1 {
+        grid-area: content-1;
+    }
+    #content-2 {
+        grid-area: content-2;
+    }
+
+    #content-3 {
+        grid-area: content-3;
+    }
+
+    #content-4 {
+        grid-area: content-4;
+    }
+
+    .content {
+        background: #72cbaf;
+        display: var(--display);
+        justify-content: var(--justify-content);
+        align-items: var(--align-items);
+    }
+
+    #footer {
+        display: var(--display);
+        justify-content: var(--justify-content);
+        align-items: var(--align-items);
+        background: #72cbaf;
+        grid-area: footer;
+    }
+    #footer a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .list {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6,1fr);
+            grid-template-areas: 
+            "title"
+            "content-1"
+            "content-2"
+            "content-3"
+            "content-4"
+            "footer";
+        }
+    }
+
+</style>
+<body>
+    <h1>Why learn CSS Grid layout?</h1>
+
+    <ul class="list">
+        <li id="title">EASIER TO CREATE DIMENSIONAL LAYOUTS</li>
+        <li class="content" id="content-1">SIMPLE MARKUP</li>
+        <li class="content" id="content-2">FLEXIBLE</li>
+        <li class="content" id="content-3">SKIP FRAMEWORKS</li>
+        <li class="content" id="content-4">BROWSER SUPPORT</li>
+        <li id="footer"><a href="#">SEE EXPLAMPLES</a></li>
+    </ul>
+</body>
+</html>

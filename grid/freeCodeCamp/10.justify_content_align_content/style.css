@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    border: 1px solid #333;
+    gap: 5px;
+    grid: repeat(2, 180px) / repeat(3, 180px);
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.container div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.red {
+    background: salmon;
+}
+
+.blue {
+    background: #a0d3d4;
+}
+
+.orange {
+    background: #ffb835;
+}

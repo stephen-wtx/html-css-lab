@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+    --background-color: #101010;
+    --primary-color: #4b4b4b;
+    --secondary-color: #6a6a6a;
+    --active-primary-color: #1098ff;
+    --active-color-2: #3cd462;
+    --active-color-3: #f59d13;
+    --active-color-4: #f4fbfa;
+    --gap: 20px;
+    --white-color: #ffffff;
+    --font-family: 'Inter', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--white-color);
+    font-family: var(--font-family);
+}
+
+
+.container {
+    display: grid;
+    grid: repeat(4, 1fr) / repeat(2, 1fr);
+    gap: var(--gap);
+    padding: 1.4rem;
+}
+
+.connection {
+    display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    gap: 8px;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
+
+.icon {
+    display: flex;
+    background: var(--secondary-color);
+    width: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.connection:hover .icon{
+    background: var(--active-primary-color);
+}
+
+#airplane-mode:hover .icon {
+    background: var(--active-color-3);
+}
+
+#wi-fi .icon,
+#bluetooth .icon {
+    background: var(--active-color-4);
+}
+
+#wi-fi:hover .icon,
+#bluetooth:hover .icon {
+    background: var(--active-primary-color);
+}
+
+#mobile-data:hover .icon {
+    background: var(--active-color-2);
+}
+
+#personal-hotspot:hover .icon{
+    background: var(--active-color-4);
+}
+
+
+
+.icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.info .title {
+    font-size: 0.9rem;
+}
+
+.info .status {
+    font-size: 0.76rem;
+    color: var(--secondary-color);
+}
+
+
+
+
+@media(max-width: 600px) {
+
+    .container {
+        grid: 1fr 2fr 2fr 1fr 1fr / 2fr 2fr;
+        grid-template-areas: "airplane airplane"
+                             "wi-fi airdrop" 
+                             "mobile-data bluetooth"
+                             "personal-hotspot personal-hotspot"
+                             "vpn vpn";
+    }
+
+
+    #airplane-mode {
+        grid-area: airplane;
+    }
+
+    #wi-fi {
+        grid-area: wi-fi;
+    }
+
+    #airdrop {
+        grid-area: airdrop;
+    }
+
+    #mobile-data {
+        grid-area: mobile-data;
+    }
+
+    #bluetooth {
+        grid-area: bluetooth;
+    }
+    #personal-hotspot {
+        grid-area: personal-hotspot;
+    }
+
+    #vpn {
+        grid-area: vpn;
+    }
+
+    #wi-fi.connection,
+    #airdrop.connection,
+    #mobile-data.connection,
+    #bluetooth.connection {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    #wi-fi .icon,
+    #airdrop .icon,
+    #mobile-data .icon,
+    #bluetooth .icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+}

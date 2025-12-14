@@ -1,0 +1,19 @@
+body {
+    background: #ffecae;
+    color: #ffecae;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container {
+    display: grid;
+    height: 100vh;
+    gap: 3px;
+    grid-template: repeat(2, 100px) / repeat(auto-fit, minmax(100px, 1fr));
+
+}
+
+.item {
+    background: #fab25f;
+}

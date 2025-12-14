@@ -1,0 +1,31 @@
+.container {
+    height: 100vh;
+    display: grid;
+    text-transform: uppercase;
+    color: beige;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    gap: 3px;
+    grid-template-columns: [main-start] 1fr [content-start] 5fr [content-end main-end];
+    grid-template-rows: [main-start] 40px auto [main-end] 40px;
+    background-color: cornsilk;
+}
+
+header {
+    background: cadetblue;
+    grid-column: main;
+}
+
+aside {
+    background: crimson;
+}
+
+.content {
+    background: cadetblue;
+    grid-column: content;
+}
+
+footer {
+    background: darksalmon;
+    grid-column: main;
+}
