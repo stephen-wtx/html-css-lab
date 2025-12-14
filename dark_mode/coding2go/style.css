@@ -1,0 +1,77 @@
+:root {
+    --base-color: #fff;
+    --base-variant: #e8e9ed;
+    --text-color: #111528;
+    --secondary-text: #232738;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+}
+
+.darkmode {
+    --base-color: #070b1d;
+    --base-variant: #101425;
+    --text-color: #fff;
+    --secondary-text: #a4a5b8;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--base-color);
+}
+
+header {
+    padding: 3em 2em;
+    color: var(--text-color);
+}
+
+
+section {
+    padding: 2em;
+    background: var(--base-variant);
+    color: var(--text-color);
+}
+
+button {
+    text-align: center;
+    color: var(--base-color);
+    padding: 10px;
+    width: 120px;
+    border-radius: 3px;
+    border: none;
+    text-transform: uppercase;
+    background: var(--secondary-text);
+}
+
+.cta-button {
+    background: var(--accent-color);
+}
+
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+
+#theme-switch img:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch img:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch img:last-child {
+    display: block;
+}
+
